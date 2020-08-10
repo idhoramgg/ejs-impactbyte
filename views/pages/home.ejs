@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('../partial/head.ejs') %>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partial/header.ejs') %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <!-- passing data dari index.js -->
+            <h3> <%= text %> </h3>
+
+            <p>Data Siswa</p>
+            <ul>
+                <% dataSiswa.forEach(function(data){ %>
+                    <li> <%= data.nama %> - <%= data.age %></li>
+                <% }); %>  
+            </ul>
+        </div>
+    </main>
+
+    <%- include('../partial/footer.ejs') %>
+</body>
+</html>
