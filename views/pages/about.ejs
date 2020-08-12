@@ -1,0 +1,33 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('../partial/head.ejs') %>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partial/header.ejs') %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <!-- passing data dari index.js -->
+            <h3> <%= text2 %> </h3>
+               <p>Name: <%- biography.name %></p>
+               <p>Age: <%- biography.age %></p>
+               <p>Location: <%- biography.address %></p>
+               <span>Hobbies: <% hobbies.forEach(function(data){ %>
+                <li> <%= data %></li>
+                <% }); %> </span> 
+                 
+                   <!-- <ol>
+                       <li><%= hobbies[0] %></li>
+                       <li><%= hobbies[1] %></li>
+                       <li><%= hobbies[2] %></li>
+                    </ol> -->
+               
+        </div>
+    </main>
+
+    <%- include('../partial/footer.ejs') %>
+</body>
+</html>
