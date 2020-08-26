@@ -1,7 +1,7 @@
 {
   "name": "latihan-ejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "tes",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
